@@ -52,8 +52,8 @@ h2{font:700 clamp(1.8rem,4vw,2.5rem)/1.1 var(--head);letter-spacing:-.02em;margi
 .fact p{margin:0 0 18px;color:var(--muted)}
 form{display:grid;gap:18px;max-width:560px}
 label{font-weight:600;display:grid;gap:6px}
-input,textarea,select{font:inherit;color:inherit;background:transparent;border:1.5px solid var(--line);border-radius:10px;padding:12px 14px;width:100%}
-select option{color:#14202B}
+input,textarea{font:inherit;color:inherit;background:transparent;border:1.5px solid var(--line);border-radius:10px;padding:12px 14px;width:100%}
+input[type=file]{padding:10px}
 textarea{min-height:130px;resize:vertical}
 .note{color:var(--muted);font-size:.9rem}
 footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
@@ -78,7 +78,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <main id="top">
   <div class="wrap hero">
     <h1>Websites people actually enjoy using.</h1>
-    <p>Main Aditya Rana hoon. Apna task yahan submit karein, aur main seedha aapse contact karunga.</p>
+    <p>Main Aditya Rana hoon. Apna task aur file yahan bhejein, aur main seedha aapse contact karunga.</p>
     <a class="btn" href="#task">Submit a task</a>
     <a class="btn ghost" href="#work">See my work</a>
   </div>
@@ -113,3 +113,33 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
       <div class="fact">
         <b>50+</b><p>websites launched</p>
         <b>5 years</b><p>of experience</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="task">
+    <div class="wrap">
+      <h2>Submit a task</h2>
+      <form action="https://formsubmit.co/adityarana638871@gmail.com" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="_subject" value="Mere pass naya task aaya hai">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <label>Your name <input name="name" required autocomplete="name"></label>
+        <label>Your email <input type="email" name="email" required autocomplete="email"></label>
+        <label>Comment <textarea name="comment" required placeholder="Aapko kya chahiye? Yahan likhein."></textarea></label>
+        <label>Attach a file (optional) <input type="file" name="attachment"></label>
+        <button class="btn" type="submit">Submit task</button>
+        <p class="note">Aapki details sirf aapse contact karne ke liye use hongi.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="y">2026</span> Aditya Rana. All rights reserved.</div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
