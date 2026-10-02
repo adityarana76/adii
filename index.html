@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aditya Rana – Web Designer & Developer</title>
+<meta name="description" content="Websites that are fast, clear and easy to use.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F1F5F8; --ink:#14202B; --muted:#4E5D6B; --line:#CBD6DF;
+  --accent:#2447D6; --accent-ink:#fff; --soft:#DCEBE3;
+  --head:"Bricolage Grotesque","Segoe UI",Arial,sans-serif;
+  --body:"Public Sans","Segoe UI",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0F1720;--ink:#EAF0F5;--muted:#9AABBA;--line:#263441;--accent:#7C9BFF;--accent-ink:#0F1720;--soft:#1B2B27}
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 var(--body)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+header{padding:22px 0;border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.logo{font:800 1.25rem var(--head);text-decoration:none}
+nav{display:flex;gap:22px}
+nav a{text-decoration:none;color:var(--muted);font-weight:500}
+nav a:hover{color:var(--ink)}
+.hero{padding:96px 0 80px}
+.hero h1{font:800 clamp(2.6rem,8vw,5.6rem)/1 var(--head);letter-spacing:-.03em;max-width:15ch}
+.hero p{max-width:52ch;margin:28px 0 36px;color:var(--muted);font-size:1.2rem}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none;border:0;cursor:pointer;font-size:1rem;font-family:inherit}
+.btn:hover{filter:brightness(1.1)}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line);margin-left:10px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+h2{font:700 clamp(1.8rem,4vw,2.5rem)/1.1 var(--head);letter-spacing:-.02em;margin-bottom:36px}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:40px}
+.services h3{font:700 1.25rem var(--head);margin-bottom:8px}
+.services p{color:var(--muted)}
+.work a{display:flex;justify-content:space-between;gap:20px;padding:22px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.work a:first-of-type{border-top:1px solid var(--line)}
+.work strong{font:700 1.3rem var(--head)}
+.work span{color:var(--muted)}
+.work a:hover strong{color:var(--accent)}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.about p{margin-bottom:16px;max-width:58ch}
+.fact{background:var(--soft);padding:28px;border-radius:14px}
+.fact b{display:block;font:800 2.4rem var(--head)}
+.fact p{margin:0 0 18px;color:var(--muted)}
+form{display:grid;gap:18px;max-width:560px}
+label{font-weight:600;display:grid;gap:6px}
+input,textarea{font:inherit;color:inherit;background:transparent;border:1.5px solid var(--line);border-radius:10px;padding:12px 14px;width:100%}
+textarea{min-height:130px;resize:vertical}
+footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+@media (max-width:720px){.about{grid-template-columns:1fr}.btn.ghost{margin:12px 0 0}.hero{padding:64px 0 56px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">Aditya Rana </a>
+    <nav aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <h1>Websites people actually enjoy using.</h1>
+    <p>I design and build fast, clear websites for small businesses and creators. Tell me what you need and you get a finished site, not a template.</p>
+    <a class="btn" href="#contact">Start a project</a>
+    <a class="btn ghost" href="#work">See my work</a>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <h2>What I can do for you</h2>
+      <div class="services">
+        <div><h3>Website design</h3><p>A clean layout that explains who you are in the first five seconds and works on every screen.</p></div>
+        <div><h3>Development</h3><p>Hand-written, lightweight code that loads quickly and is easy for you to update later.</p></div>
+        <div><h3>Care and updates</h3><p>Changes, fixes and new pages after launch, so your site never goes out of date.</p></div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap work">
+      <h2>Recent work</h2>
+      <a href="#"><strong>Project one</strong><span>Online store</span></a>
+      <a href="#"><strong>Project two</strong><span>Restaurant website</span></a>
+      <a href="#"><strong>Project three</strong><span>Personal portfolio</span></a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about">
+      <div>
+        <h2>About me</h2>
+        <p>Write two or three sentences here about who you are, where you work from and what you care about when building a website.</p>
+        <p>Add one line about how you work with clients, for example how quickly you reply and how projects are priced.</p>
+      </div>
+      <div class="fact">
+        <b>50+</b><p>websites launched</p>
+        <b>5 years</b><p>of experience</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <h2>Tell me about your project</h2>
+      <form action="mailto:you@example.com" method="post" enctype="text/plain">
+        <label>Your name <input name="name" required autocomplete="name"></label>
+        <label>Email <input type="email" name="email" required autocomplete="email"></label>
+        <label>What do you need? <textarea name="message" required></textarea></label>
+        <button class="btn" type="submit">Send message</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="y">2026</span> Your Name. All rights reserved.</div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
