@@ -52,8 +52,10 @@ h2{font:700 clamp(1.8rem,4vw,2.5rem)/1.1 var(--head);letter-spacing:-.02em;margi
 .fact p{margin:0 0 18px;color:var(--muted)}
 form{display:grid;gap:18px;max-width:560px}
 label{font-weight:600;display:grid;gap:6px}
-input,textarea{font:inherit;color:inherit;background:transparent;border:1.5px solid var(--line);border-radius:10px;padding:12px 14px;width:100%}
+input,textarea,select{font:inherit;color:inherit;background:transparent;border:1.5px solid var(--line);border-radius:10px;padding:12px 14px;width:100%}
+select option{color:#14202B}
 textarea{min-height:130px;resize:vertical}
+.note{color:var(--muted);font-size:.9rem}
 footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
 @media (max-width:720px){.about{grid-template-columns:1fr}.btn.ghost{margin:12px 0 0}.hero{padding:64px 0 56px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
@@ -63,12 +65,12 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 
 <header>
   <div class="wrap">
-    <a class="logo" href="#top">Aditya </a>
+    <a class="logo" href="#top">Aditya Rana</a>
     <nav aria-label="Main">
       <a href="#services">Services</a>
       <a href="#work">Work</a>
       <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <a href="#task">Submit a task</a>
     </nav>
   </div>
 </header>
@@ -76,8 +78,8 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <main id="top">
   <div class="wrap hero">
     <h1>Websites people actually enjoy using.</h1>
-    <p>I design and build fast, clear websites for small businesses and creators. Tell me what you need and you get a finished site, not a template.</p>
-    <a class="btn" href="#contact">Start a project</a>
+    <p>Main Aditya Rana hoon. Apna task yahan submit karein, aur main seedha aapse contact karunga.</p>
+    <a class="btn" href="#task">Submit a task</a>
     <a class="btn ghost" href="#work">See my work</a>
   </div>
 
@@ -88,6 +90,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
         <div><h3>Website design</h3><p>A clean layout that explains who you are in the first five seconds and works on every screen.</p></div>
         <div><h3>Development</h3><p>Hand-written, lightweight code that loads quickly and is easy for you to update later.</p></div>
         <div><h3>Care and updates</h3><p>Changes, fixes and new pages after launch, so your site never goes out of date.</p></div>
+      </div>
     </div>
   </section>
 
@@ -104,33 +107,9 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
     <div class="wrap about">
       <div>
         <h2>About me</h2>
-        <p>Write two or three sentences here about who you are, where you work from and what you care about when building a website.</p>
-        <p>Add one line about how you work with clients, for example how quickly you reply and how projects are priced.</p>
+        <p>Hi, I'm Aditya Rana. Yahan apne baare mein 2-3 lines likhein: aap kahan se hain aur website banate waqt kis cheez ka dhyan rakhte hain.</p>
+        <p>Ek line add karein ki aap clients ke saath kaise kaam karte hain.</p>
       </div>
       <div class="fact">
         <b>50+</b><p>websites launched</p>
         <b>5 years</b><p>of experience</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="wrap">
-      <h2>Tell me about your project</h2>
-      <form action="mailto:you@example.com" method="post" enctype="text/plain">
-        <label>Your name <input name="name" required autocomplete="name"></label>
-        <label>Email <input type="email" name="email" required autocomplete="email"></label>
-        <label>What do you need? <textarea name="message" required></textarea></label>
-        <button class="btn" type="submit">Send message</button>
-      </form>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="wrap">© <span id="y">2026</span> Your Name. All rights reserved.</div>
-</footer>
-
-<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
-</body>
-</html>
